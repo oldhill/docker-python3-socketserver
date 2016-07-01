@@ -5,4 +5,7 @@ WORKDIR app
 
 COPY server.py app/
 
-ENTRYPOINT ['python3', 'server.py']
+EXPOSE 9999
+
+# CMD ["ls", "-al"]
+CMD ["python3", "app/server.py"]
